@@ -16,14 +16,14 @@
 			@confirm="deleteLists"
 			@cancel="showConfirmDialog = false"
 		>
-			Are you sure you want to delete this list?
+			Вы и вправду хотите удалить запись?
 		</DialogUi>
 		<DialogUi
 			v-if="showCancelDialog"
 			@confirm="$router.push('/')"
 			@cancel="showCancelDialog = false"
 		>
-			Are you sure you want to cancel this list?
+			Вы и вправду хотите отменить?
 		</DialogUi>
 	</section>
 </template>
